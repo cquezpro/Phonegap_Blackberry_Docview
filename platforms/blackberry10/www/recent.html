@@ -1,0 +1,72 @@
+<div data-bb-type="screen" id="myTitleBar" style="background-color: #000000">
+
+    <div id = "dvTitle" data-bb-type="title" data-bb-caption="Open GVA"></div>
+
+    <select data-bb-caption="Sort" data-bb-style="stretch" hidden="true"  onchange="sort_list();" id="sortType" name="sortType" style="text-align: center;color:#ffffff">
+        <option value="0">Name</option>
+        <option value="1">Size</option>
+        <option value="2">Date</option>
+    </select>
+
+   <select data-bb-caption="Order" data-bb-style="stretch" onchange="sort_list();" id="sortAsc" name="sortAsc" style="text-align: center;color:#ffffff">
+        <option value="0">Ascending</option>
+        <option value="1">Descending</option>
+    </select>
+
+    <!--<div id="controlPanel" data-bb-type="round-panel">
+        <div id="controlHeader" data-bb-type="panel-header">selection</div>
+        <table>
+            <tr>
+                <td><span id="cbHead1">odt</span></td>
+                <td> <input id="cb1" type="checkbox" checked="true" value="1"/></td>
+            </tr>
+            <tr>
+                <td><span id="cbHead2">ods</span></td>
+                <td><input id="cb2" type="checkbox" value="2" /></td>
+            </tr>
+            <tr>
+                <td><span id="cbHead3">odp</span></td>
+                <td><input id="cb3" type="checkbox" value="3" /></td>
+            </tr>
+        </table>
+
+
+
+        <div data-bb-type="button" id="bntOk" onclick="filter_click();" data-bb-img="img/ic_more_button.png">selection</div>
+    </div>
+-->
+
+   <div style="display: none;color:white;margin-top:10px;margin-left:10px" id="messageDiv"></div>
+
+    <div  data-bb-type="image-list" data-bb-context="true"  data-bb-image-effect="fade" id="myImageList">
+        <!--<div data-bb-type="item" data-bb-img="img/icon_small.png" data-bb-title="noname.odt">/file/path/to/file.odt</div>-->
+    </div>
+
+    <div data-bb-type="context-menu" id="recent_context">
+        <div data-bb-type="action" id="shareAction" data-bb-img="local:///img/ic_share.png" onclick="share(this);">Share</div>
+        <div data-bb-type="action" id="deleteAction" data-bb-img="local:///img/ic_delete.png" data-bb-pin="true" onclick="customDeleteDialog();">Delete</div><!-- onclick="del(this);"-->
+    </div>
+
+    <div data-bb-type="menu" >
+        <div data-bb-type="menu-item" data-bb-img="img/ic_empty.png" onclick="open_about_page();" data-bb-pin="left">   </div>
+        <div id="aboutitem" data-bb-type="menu-item" data-bb-img="img/ic_info.png" onclick="open_about_page();">About</div>
+        <div data-bb-type="menu-item" data-bb-img="img/ic_empty.png" onclick="open_about_page();" data-bb-pin="right">   </div>
+    </div>
+
+    <!--    </div>    -->
+    <div data-bb-type="action-bar" id="actionBarDv" data-bb-more-caption="111">
+        <div id="tab0" data-bb-type="action" onclick="tab_selected(0);" data-bb-style="tab" data-bb-img="img/todos-icon.png" data-bb-overflow="true" >All</div>
+        <div id="tab1" data-bb-type="action" onclick="tab_selected(1);" data-bb-style="tab" data-bb-img="img/odt-icon.png" data-bb-overflow="true">ODT</div>
+        <div id="tab2" data-bb-type="action" onclick="tab_selected(2);" data-bb-style="tab" data-bb-img="img/ods-icon.png" data-bb-overflow="true">ODS</div>
+        <div id="tab3" data-bb-type="action" onclick="tab_selected(3);" data-bb-style="tab" data-bb-img="img/odp-icon.png" data-bb-overflow="true">ODP</div>
+       <!-- <div id="tab4" data-bb-type="action" onclick="tab_selected(4);" data-bb-style="tab" data-bb-img="img/ic_select_more.png" data-bb-overflow="true">selection</div>-->
+        <!--<div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-accent-text="Accent Text" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="showTab('tabOverflow');">Tab 1</div>-->
+        <!--        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="showTab('tabOverflow');">Tab 2</div>-->
+<!--        <div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/ic_overflow_action.png">More</div>-->
+        <div id="opendiv" data-bb-type="action" data-bb-style="button" data-bb-selected="true" data-bb-img="img/ic_open.png" onclick="ab_language_click();">open</div>
+
+        <div id="opendivmenu" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/ic_open.png"  onclick="ab_language_click();">open</div>
+<!--        <div id="selectDiv" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/ic_select_more.png" onclick="ab_save_click();">selection</div>-->
+        <div id="sortByName" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/ic_sort.png" onclick="ab_sort_click();">sort</div>
+    </div>
+</div>

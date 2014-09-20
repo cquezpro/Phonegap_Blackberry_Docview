@@ -1,0 +1,121 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "www/config.xml": {
+                "parents": {
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"com.blackberry.invoke\" value=\"com.blackberry.invoke\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.invoke.card\" value=\"com.blackberry.invoke.card\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.io\" value=\"com.blackberry.io\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.invoked\" value=\"com.blackberry.invoked\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.utils\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.jpps\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.system\" value=\"com.blackberry.system\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.app\" value=\"com.blackberry.app\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.ui.contextmenu\" value=\"com.blackberry.ui.contextmenu\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.bbui\" value=\"com.blackberry.bbui\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\" value=\"SplashScreen\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"com.blackberry.ui.dialog\" value=\"com.blackberry.ui.dialog\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        },
+        "www/config.xml": {
+            "/widget": {
+                "<feature name=\"com.blackberry.app\" value=\"com.blackberry.app\" />": 0,
+                "<feature name=\"com.blackberry.bbui\" value=\"com.blackberry.bbui\" />": 0,
+                "<feature name=\"com.blackberry.community.clipboard\" value=\"com.blackberry.community.clipboard\" />": 0,
+                "<feature name=\"com.blackberry.invoke\" value=\"com.blackberry.invoke\" />": 0,
+                "<feature name=\"com.blackberry.invoke.card\" value=\"com.blackberry.invoke.card\" />": 0,
+                "<feature name=\"com.blackberry.invoked\" value=\"com.blackberry.invoked\" />": 0,
+                "<feature name=\"com.blackberry.io\" value=\"com.blackberry.io\" />": 0,
+                "<feature name=\"com.blackberry.jpps\" />": 0,
+                "<feature name=\"com.blackberry.system\" value=\"com.blackberry.system\" />": 0,
+                "<feature name=\"com.blackberry.ui.contextmenu\" value=\"com.blackberry.ui.contextmenu\" />": 0,
+                "<feature name=\"com.blackberry.utils\" />": 0,
+                "<feature name=\"File\" value=\"File\" />": 0,
+                "<feature name=\"SplashScreen\" value=\"SplashScreen\" />": 0
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.blackberry.invoke": {
+            "PACKAGE_NAME": "MyOffice"
+        },
+        "com.blackberry.invoke.card": {
+            "PACKAGE_NAME": "MyOffice"
+        },
+        "com.blackberry.io": {
+            "PACKAGE_NAME": "MyOffice"
+        },
+        "com.blackberry.invoked": {
+            "PACKAGE_NAME": "MyOffice"
+        },
+        "com.blackberry.system": {
+            "PACKAGE_NAME": "MyOffice"
+        },
+        "com.blackberry.app": {
+            "PACKAGE_NAME": "MyOffice"
+        },
+        "com.blackberry.ui.contextmenu": {
+            "PACKAGE_NAME": "MyOffice"
+        },
+        "com.blackberry.bbui": {
+            "PACKAGE_NAME": "MyOffice"
+        },
+        "org.apache.cordova.splashscreen": {
+            "PACKAGE_NAME": "MyOffice"
+        },
+        "com.blackberry.ui.dialog": {
+            "PACKAGE_NAME": "MyOffice"
+        }
+    },
+    "dependent_plugins": {
+        "com.blackberry.utils": {
+            "PACKAGE_NAME": "MyOffice"
+        },
+        "com.blackberry.jpps": {
+            "PACKAGE_NAME": "MyOffice"
+        }
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link id="themecss" rel="stylesheet" type="text/css" href="css/bbui-black.css"/>
+        <script src="js/actionbar_menu.js" id="actionBarJS" type="text/javascript"></script>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/hammer.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="js/bbui.js"></script>
+
+        <script src="editor/webodf.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/view1.js" charset="utf-8" type="text/javascript"></script>
+
+        <script type="text/javascript" charset="utf-8" src="js/zip/zip.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/db.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+        <script src="editor/FileSaver.js" type="text/javascript" charset="utf-8"></script>
+        <script src="editor/FileSaver.js" type="text/javascript" charset="utf-8"></script>
+        <script src="editor/localeditor.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="js/jquery-1.4.1.min.js" charset="utf-8" type="text/javascript"></script>
+        <link href="css/jquery.alerts.css" rel="stylesheet" type="text/css" media="screen" />
+        <script src="js/jquery.alerts.js" charset="utf-8" type="text/javascript"></script>
+
+        <script src="js/handlebars-v1.3.0.js" type="text/javascript"></script>
+
+        <!-- sample code -->
+        <script src="locales/messages.js"></script>
+        <script src="js/localization.js"></script>
+        <!--<script src="editor/dojo.js" data-dojo-config="async: true"></script>-->
+          <!--
+                  <link rel="stylesheet" type="text/css" href="editor/app/resources/app.css"/>
+           -->       <!-- dojo setup: end -->
+
+        <!-- editor: start -->
+<!--        <link rel="stylesheet" type="text/css" href="editor/editor.css"/>-->
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css"/>
+        <link rel="stylesheet" type="text/css" href="css/animation.css"/>
+<!--        <script type="text/javascript" src="editor/listener.js" charset="utf-8"></script>
+        <script src="editor/FileSaver.js" type="text/javascript" charset="utf-8"></script>
+        <script src="editor/localeditor.js" type="text/javascript" charset="utf-8"></script>-->
+
+        <script type="text/javascript" charset="utf-8">
+            dojoConfig = {
+                paths: {
+                    "webodf/editor": "editor/..",
+                    "dijit": "dijit",
+                    "dojox": "dojox",
+                    "dojo": "dojo",
+                    "resources": "resources"
+                }
+            }
+        </script>
+        <script src="editor/dojo-amalgamation.js" data-dojo-config="async: true"></script>
+        <!--
+        <link rel="stylesheet" type="text/css" href="css/viewer.css" media="screen"/>-->
+      <!--  <script type="text/javascript" src="js/db.js"/>
+-->
+        <script type="text/javascript">
+           app.initialize();
+           doPageLoad();
+
+
+        </script>
+        <title>ODF reader</title>
+    </head>
+    <body style="background-color: #000000" >
+    </body>
+</html>

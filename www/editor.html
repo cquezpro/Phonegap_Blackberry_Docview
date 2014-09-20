@@ -1,0 +1,44 @@
+
+<div data-bb-type="screen" data-bb-effect="slide-left">
+    <script src="editor/js_loader.js" type="text/javascript" charset="utf-8"></script>
+    <script src="editor/localeditor.js" type="text/javascript" charset="utf-8"></script>
+   <!-- <div id = "dvTitle" data-bb-type="title" data-bb-caption="My Office" ></div>-->
+
+    <!--    <div data-bb-type="scroll-panel">-->
+    <div id="mainContainer">
+        <div id="editor">
+            <div id="container">
+                <div id="canvas"></div>
+            </div>
+        </div>
+    </div>
+    <!--    </div>-->
+    <div data-bb-type="action-bar">
+        <!--<div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-accent-text="Accent Text" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="showTab('tabOverflow');">Tab 1</div>-->
+        <!--        <div data-bb-type="action" data-bb-style="tab" data-bb-overflow="true" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="showTab('tabOverflow');">Tab 2</div>-->
+        <div id="opendiv" data-bb-type="action" data-bb-style="button" data-bb-selected="true" data-bb-img="img/ic_open.png" onclick="ab_language_click();">open</div>
+        <!--        <div id="prevpage" data-bb-type="action" data-bb-style="button" data-bb-img="img/go-previous.png" onclick="prev();">previous page</div>
+                <div id="nextpage" data-bb-type="action" data-bb-style="button"  data-bb-img="img/go-next.png" onclick="next();">next page</div>-->
+        <div id="editdiv" data-bb-type="action" data-bb-style="button"  data-bb-img="img/ic_done.png" onclick="ab_save_click();">save</div>
+        <div id="settingdiv" data-bb-type="action" data-bb-style="button" data-bb-img="img/ic_clear.png"  onclick="ab_close_click();">close</div>
+        <!--  <div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="alert('You clicked More');">More</div>-->
+
+        <!--
+                <div id="editdiv" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/ZoomIn.png" onclick="ab_edit_click();">zoom in</div>
+                <div id="settingdiv" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/ZoomOut.png" onclick="ab_settings_click();">zoom out</div>
+        -->
+        <div id="font" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/Font.png" onclick="ab_save_click();">font</div>
+        <div id="boldFont" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/text_bold.png" onclick="ab_save_click();">bold</div>
+        <div id="italicFont" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/text_italic.png"  onclick="ab_close_click();">italic</div>
+        <div id="underlineFont" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/text_underline.png" onclick="ab_save_click();">underline</div>
+        <div id="strikeFont" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/strike_through.png"  onclick="ab_close_click();">strikethrought</div>
+        <div id="left" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/icon_text_align_left.png" onclick="ab_save_click();">left</div>
+        <div id="center" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/icon_text_align_center.png"  onclick="ab_close_click();">center</div>
+        <div id="right" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/icon_text_align_right.png" onclick="ab_save_click();">right</div>
+        <div id="justify" data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="img/icon_text_align_justify.png"  onclick="ab_close_click();">justify</div>
+
+        <!--<div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="alert('You clicked Extra Action');">Extra Action</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="alert('You clicked Another Action');">Another Action</div>
+        <div data-bb-type="action" data-bb-style="button" data-bb-overflow="true" data-bb-pin="true" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="alert('You clicked Delete');">Delete</div>-->
+    </div>
+</div>

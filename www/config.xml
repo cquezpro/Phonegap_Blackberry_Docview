@@ -1,0 +1,63 @@
+<widget id="MyODF" 
+  xmlns="http://www.w3.org/ns/widgets" 
+  xmlns:cdv="http://cordova.apache.org/ns/1.0" version="1.0.0.7">
+  <name>ODF Reader</name>
+  <description>The first and the exclusive ODF Reader for BlackBerry 10</description>
+  <icon src="img/MyOffice.png"/>
+  <access origin="*"/>
+  <preference name="fullscreen" value="true"/>
+  <preference name="webviewbounce" value="true"/>
+  <preference name="AutoHideSplashScreen" value="false"/>
+  <feature id="blackberry.ui.menu"/>
+  <feature id="blackberry.ui.dialog"/>
+  <feature id="blackberry.identity"/>
+  <feature id="blackberry.system.event"/>
+  <feature id="blackberry.app"/>
+  <feature id="blackberry.app.event"/>
+  <feature id="blackberry.ui.contextmenu"/>
+  <feature id="blackberry.system" required="true" version="1.0.0.0"/>
+  <rim:splash src="img/LogoGVA_1280.png"/>
+  <rim:splash src="img/LogoGVA_720.png"/>
+  <rim:splash src="img/LogoGVA_1440.png"/>
+  <author email="ariapazooki@gmail.com" href="http://www.AriaPazooki.com">Aria Pazooki Sharif</author>
+  <content src="index.html"/>
+  <rim:permissions>
+    <rim:permit>access_shared</rim:permit>
+  </rim:permissions>
+  <rim:invoke-target id="MyODFOdt">
+    <type>APPLICATION</type>
+    <icon>
+      <image>img/odt-file.png</image>
+    </icon>
+    <filter>
+      <action>bb.action.OPEN</action>
+      <mime-type>*</mime-type>
+      <property var="uris" value="file://"/>
+      <property var="exts" value="odt"/>
+    </filter>
+  </rim:invoke-target>
+  <rim:invoke-target id="MyODFOds">
+    <type>APPLICATION</type>
+    <icon>
+      <image>img/ods-file.png</image>
+    </icon>
+    <filter>
+      <action>bb.action.OPEN</action>
+      <mime-type>*</mime-type>
+      <property var="uris" value="file://"/>
+      <property var="exts" value="ods"/>
+    </filter>
+  </rim:invoke-target>
+  <rim:invoke-target id="MyODFOdp">
+    <type>APPLICATION</type>
+    <icon>
+      <image>img/odp-file.png</image>
+    </icon>
+    <filter>
+      <action>bb.action.OPEN</action>
+      <mime-type>*</mime-type>
+      <property var="uris" value="file://"/>
+      <property var="exts" value="odp"/>
+    </filter>
+  </rim:invoke-target>
+</widget>
